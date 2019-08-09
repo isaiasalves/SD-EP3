@@ -66,7 +66,7 @@ public class Coordenador {
         // envio do datagrama ao host remoto
         clientSocket.send(sendPacket);
         //salva a porta que o cliente utilizou para enviar a mensagem
-        //System.out.println("\n Thread " + Thread.currentThread().getName() + " - Enviando: " + sendData + " por gossip ao peer :" + ip + ":" + porta);
+        System.out.println("\n Thread " + Thread.currentThread().getName() + " - Enviando: " + sendData + " ao MAPPER :" + ip + ":" + porta);
     }
 
     public static void escuta() {
